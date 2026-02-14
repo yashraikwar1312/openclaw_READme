@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClawBot – Telegram AI Assistant</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #000;
+    color: #e5ffe5;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 10%;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+h1, h2 {
+    color: #8aff8a;
+    margin-bottom: 20px;
+}
+
+p, li {
+    color: #bfffbf;
+    line-height: 1.7;
+}
+
+ul {
+    margin-top: 15px;
+}
+
+a {
+    color: #7cff7c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cursor Gradient Effect */
+.cursor-gradient {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(120,255,120,0.4) 0%, rgba(0,0,0,0) 70%);
+    transform: translate(-50%, -50%);
+    transition: transform 0.08s linear;
+    z-index: 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="cursor-gradient" id="cursor"></div>
+
+<section class="hero">
+    <h1>ClawBot</h1>
+    <p class="subtitle">Telegram AI Assistant powered by OpenClaw</p>
+</section>
+
+<section>
+    <h2>Overview</h2>
+    <p>
+        ClawBot is a secure Telegram AI assistant built using OpenClaw Gateway and OpenAI model integration.
+        This project demonstrates real-world AI deployment, secure access control, and CLI-based agent management.
+    </p>
+</section>
+
+<section>
+    <h2>Features</h2>
+    <ul>
+        <li>🔐 Secure Telegram pairing system</li>
+        <li>🤖 AI-powered responses</li>
+        <li>⚙️ Gateway-based architecture</li>
+        <li>🧩 Extensible tool integration</li>
+        <li>🛡️ Controlled DM & group access policies</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Tech Stack</h2>
+    <ul>
+        <li>OpenClaw CLI</li>
+        <li>Telegram Bot API</li>
+        <li>OpenAI API</li>
+        <li>WebSocket Gateway</li>
+        <li>Node.js Runtime</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Installation Guide</h2>
+    <p>1. Install OpenClaw</p>
+    <pre>iwr -useb https://openclaw.ai/install.ps1 | iex</pre>
+
+    <p>2. Create Telegram Bot via @BotFather</p>
+    <p>3. Add Telegram config with your bot token</p>
+    <p>4. Start gateway:</p>
+    <pre>openclaw gateway</pre>
+
+    <p>5. Approve pairing:</p>
+    <pre>openclaw pairing approve telegram &lt;CODE&gt;</pre>
+</section>
+
+<section>
+    <h2>OpenClaw Repository</h2>
+    <p>
+        Official OpenClaw GitHub:  
+        <a href="https://github.com/openclaw-ai/openclaw" target="_blank">
+            https://github.com/openclaw-ai/openclaw
+        </a>
+    </p>
+</section>
+
+<section>
+    <h2>Disclaimer</h2>
+    <p>
+        This project integrates OpenClaw for Telegram AI deployment.
+        I did not create OpenClaw.
+        All rights reserved to the OpenClaw creators.
+    </p>
+</section>
+
+<div class="footer">
+    <p>Created by Yash Raikwar</p>
+    <p>
+        📧 <a href="mailto:yashraikwar132005@gmail.com">
+        yashraikwar132005@gmail.com
+        </a>
+    </p>
+</div>
+
+<script>
+const cursor = document.getElementById('cursor');
+
+document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+});
+</script>
+
+</body>
+</html>
